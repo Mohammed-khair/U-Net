@@ -16,19 +16,6 @@ Before we begin constructing the U-Net model, we need to load the image data. Th
 
 We create TensorFlow datasets to efficiently manage our image and mask data during training and evaluation. These datasets facilitate lazy loading and preprocessing of data, ensuring memory efficiency.
 
-```python
-# Load image and mask file paths
-image_list_ds = tf.data.Dataset.list_files(image_list, shuffle=False)
-mask_list_ds = tf.data.Dataset.list_files(mask_list, shuffle=False)
-
-# Create constant tensors for image and mask filenames
-image_filenames = tf.constant(image_list)
-masks_filenames = tf.constant(mask_list)
-
-# Create a dataset of tuples containing image and mask file paths
-dataset = tf.data.Dataset.from_tensor_slices((image_filenames, masks_filenames))
-```
-
 ### Preprocess the Data
 
 We preprocess the data by implementing functions to read, decode, and resize the images and masks. These functions are applied to the dataset, preparing the data for input into the model during training and evaluation.
