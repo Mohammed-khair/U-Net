@@ -3,6 +3,8 @@
 
 In this project, we will explore the implementation of U-Net, a convolutional neural network (CNN) architecture known for its effectiveness in image segmentation tasks. Our goal is to predict pixel-wise labels within images from a self-driving car dataset, a task that demands precision and accuracy. This README file provides an overview of the project and the steps involved in creating a U-Net model for image segmentation.
 
+![link](https://www.coursera.org/learn/convolutional-neural-networks)
+
 ## Project Overview
 
 This project was undertaken as part of the Deep Learning Specialization course offered on Coursera. Our objective is to delve into the U-Net architecture and its potential in image segmentation tasks. We will build a U-Net model that takes in images and predicts labels for each pixel, enabling us to identify objects of interest within the images.
